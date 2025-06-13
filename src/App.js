@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import HeroLanding from './components/HeroLanding';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import Education from './components/Education';
 import About from './components/About';
 import Contact from './components/Contact';
 
@@ -15,6 +16,7 @@ function App() {
       <HeroLanding />
       <HeroSection />
       <Skills />
+      <Education />
       <Projects />
       <About />
       <Contact />
