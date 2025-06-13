@@ -1,12 +1,12 @@
 // src/components/Skills.js
 import React from "react";
 import { FaJava, FaReact, FaDocker, FaPython } from "react-icons/fa";
-import { SiSpringboot, SiPostgresql, SiHtml5, SiCss3, SiJavascript, SiCsharp } from "react-icons/si";
+import { SiSpringboot, SiPostgresql, SiHtml5, SiCss3, SiJavascript, SiDotnet } from "react-icons/si";
 
 const skills = [
   { name: "Java", icon: <FaJava size={40} color="#f89820" /> },
   { name: "Spring Boot", icon: <SiSpringboot size={40} color="#6DB33F" /> },
-  { name: "C#", icon: <SiCsharp size={40} color="#68217A" /> },
+  { name: "C#", icon: <SiDotnet size={40} color="#68217A" /> },
   { name: "PostgreSQL", icon: <SiPostgresql size={40} color="#336791" /> },
   { name: "Docker", icon: <FaDocker size={40} color="#0db7ed" /> },
   { name: "Python", icon: <FaPython size={40} color="#3776ab" /> },
