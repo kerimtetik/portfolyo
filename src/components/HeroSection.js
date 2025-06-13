@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="w-[320px] h-[420px] bg-gray-900 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-500">
           <img
             src="/profil2.jpg"
-            alt="profil2"
+            alt="profil"
             className="w-full h-full object-cover"
           />
         </div>
