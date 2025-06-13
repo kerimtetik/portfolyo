@@ -4,7 +4,7 @@ import {
   FaJava,
   FaReact,
   FaDocker,
-  SiPython,
+  FaPython,
 } from "react-icons/fa";
 import {
   SiSpringboot,
@@ -21,7 +21,7 @@ const skills = [
   { name: "C#", icon: <SiDotnet size={30} color="#68217A" />, level: 3 },
   { name: "PostgreSQL", icon: <SiPostgresql size={30} color="#336791" />, level: 3 },
   { name: "Docker", icon: <FaDocker size={30} color="#0db7ed" />, level: 2 },
-  { name: "Python", icon: <SiPython size={30} color="#3776ab" />, level: 4 },
+  { name: "Python", icon: <FaPython size={30} color="#3776ab" />, level: 4 },
   {
     name: "HTML & CSS",
     icon: (
