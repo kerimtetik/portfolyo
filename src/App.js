@@ -2,6 +2,7 @@
 import React from 'react';
 import DarkModeToggle from './components/DarkModeToggle';
 import HeroSection from './components/HeroSection';
+import HeroLanding from './components/HeroLanding';
 import Projects from './components/Projects';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -11,6 +12,7 @@ function App() {
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen transition-colors duration-300">
       <DarkModeToggle />
       <HeroSection />
+      <HeroLanding />
       <Projects />
       <About />
       <Contact />
