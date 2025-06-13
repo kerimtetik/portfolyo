@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -44,11 +45,21 @@ const HeroSection = () => {
 
         {/* Sosyal Medya */}
         <div className="mt-6 flex gap-6 text-2xl text-white">
-          <a href="https://github.com/kerimtetik" className="hover:text-gray-300">
-            <i className="fab fa-github"></i>
+          <a
+            href="https://github.com/kerimtetik"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-300"
+          >
+            <FaGithub />
           </a>
-          <a href="https://www.linkedin.com/in/kerim-tetik-708168221/" className="hover:text-blue-300">
-            <i className="fab fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/kerim-tetik-708168221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-300"
+          >
+            <FaLinkedin />
           </a>
         </div>
       </div>
