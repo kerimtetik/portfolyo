@@ -4,7 +4,7 @@ import {
   FaJava,
   FaReact,
   FaDocker,
-  FaPython,
+  SiPython,
 } from "react-icons/fa";
 import {
   SiSpringboot,
@@ -17,11 +17,11 @@ import {
 
 const skills = [
   { name: "Java", icon: <FaJava size={30} color="#f89820" />, level: 4 },
-  { name: "Spring Boot", icon: <SiSpringboot size={30} color="#6DB33F" />, level: 4 },
+  { name: "Spring Boot", icon: <SiSpringboot size={30} color="#6DB33F" />, level: 3 },
   { name: "C#", icon: <SiDotnet size={30} color="#68217A" />, level: 3 },
-  { name: "PostgreSQL", icon: <SiPostgresql size={30} color="#336791" />, level: 4 },
-  { name: "Docker", icon: <FaDocker size={30} color="#0db7ed" />, level: 3 },
-  { name: "Python", icon: <FaPython size={30} color="#3776ab" />, level: 4 },
+  { name: "PostgreSQL", icon: <SiPostgresql size={30} color="#336791" />, level: 3 },
+  { name: "Docker", icon: <FaDocker size={30} color="#0db7ed" />, level: 2 },
+  { name: "Python", icon: <SiPython size={30} color="#3776ab" />, level: 4 },
   {
     name: "HTML & CSS",
     icon: (
@@ -30,10 +30,10 @@ const skills = [
         <SiCss3 size={25} color="#264de4" />
       </div>
     ),
-    level: 5,
+    level: 3,
   },
-  { name: "JavaScript", icon: <SiJavascript size={30} color="#f0db4f" />, level: 4 },
-  { name: "React", icon: <FaReact size={30} color="#61DBFB" />, level: 4 },
+  { name: "JavaScript", icon: <SiJavascript size={30} color="#f0db4f" />, level: 3 },
+  { name: "React", icon: <FaReact size={30} color="#61DBFB" />, level: 2 },
 ];
 
 const Skills = () => {
