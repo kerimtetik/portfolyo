@@ -7,8 +7,8 @@ const HeroSection = () => {
       <div className="w-full lg:w-1/2 flex justify-center">
         <div className="w-[320px] h-[420px] bg-gray-900 rounded-xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-500">
           <img
-            src="/profil.jpg"
-            alt="profil"
+            src="/profil2.jpg"
+            alt="profil2"
             className="w-full h-full object-cover"
           />
         </div>
@@ -44,10 +44,10 @@ const HeroSection = () => {
 
         {/* Sosyal Medya */}
         <div className="mt-6 flex gap-6 text-2xl text-white">
-          <a href="#" className="hover:text-gray-300">
+          <a href="https://github.com/kerimtetik" className="hover:text-gray-300">
             <i className="fab fa-github"></i>
           </a>
-          <a href="#" className="hover:text-blue-300">
+          <a href="https://www.linkedin.com/in/kerim-tetik-708168221/" className="hover:text-blue-300">
             <i className="fab fa-linkedin"></i>
           </a>
         </div>
