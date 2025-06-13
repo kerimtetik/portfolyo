@@ -1,37 +1,52 @@
 import React from "react";
 
-const educationList = [
+const educationData = [
   {
-    school: "Gümüşhane Üniversitesi",
-    degree: "Yazılım Mühendisliği",
-    year: "2019 - 2023",
+    school: "Turgut Özal Anadolu Lisesi",
+    degree: "Lise",
+    year: "2016 - 2020",
+    note: "88/100",
   },
   {
-    school: "Atatürk Anadolu Lisesi",
-    degree: "Sayısal",
-    year: "2015 - 2019",
+    school: "İnönü Üniversitesi",
+    degree: "Bilgisayar Mühendisliği (Lisans)",
+    year: "2021 - 2025",
+    note: "3.03/4.00",
   },
 ];
 
+const language = {
+  dil: "İngilizce",
+  seviye: "B1 - Orta Seviye",
+};
+
 const Education = () => {
   return (
-    <div className="py-16 bg-gray-100 text-center">
-      <h2 className="text-3xl font-bold text-indigo-800 mb-10">Eğitim</h2>
-      <div className="max-w-3xl mx-auto space-y-6">
-        {educationList.map((edu, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-md rounded-lg p-6 text-left"
-          >
-            <h3 className="text-xl font-semibold text-indigo-700">
-              {edu.school}
-            </h3>
-            <p className="text-gray-600">{edu.degree}</p>
-            <p className="text-sm text-gray-500">{edu.year}</p>
+    <section className="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 px-6">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-12">Eğitim</h2>
+        <div className="space-y-8">
+          {educationData.map((edu, index) => (
+            <div
+              key={index}
+              className="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left"
+            >
+              <h3 className="text-2xl font-semibold text-pink-400">{edu.school}</h3>
+              <p className="text-lg">{edu.degree}</p>
+              <p className="text-sm text-gray-400 mt-1">{edu.year}</p>
+              <p className="text-sm text-gray-400">Not Ortalaması: {edu.note}</p>
+            </div>
+          ))}
+
+          {/* Dil seviyesi */}
+          <div className="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left">
+            <h3 className="text-2xl font-semibold text-pink-400">Yabancı Dil</h3>
+            <p className="text-lg">{language.dil}</p>
+            <p className="text-sm text-gray-400">Seviye: {language.seviye}</p>
           </div>
-        ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 
