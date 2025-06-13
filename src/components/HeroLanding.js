@@ -10,7 +10,7 @@ const HeroLanding = () => {
           Kerim Tetik <br />
           <span className="text-purple-300">Backend Developer</span>
         </h1>
-        <p className="text-gray-400 font-light">PORTFOLYO</p>
+        <p className="text-gray-400 font-light">Kişisel Web Sitesi</p>
 
         {/* Aşağı ok simgesi */}
         <div className="pt-10 animate-bounce">

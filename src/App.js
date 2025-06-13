@@ -11,8 +11,8 @@ function App() {
   return (
     <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen transition-colors duration-300">
       <DarkModeToggle />
-      <HeroSection />
       <HeroLanding />
+      <HeroSection />
       <Projects />
       <About />
       <Contact />
