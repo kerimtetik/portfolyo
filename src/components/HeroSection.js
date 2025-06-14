@@ -1,4 +1,3 @@
-// src/components/HeroSection.jsx
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -8,22 +7,20 @@ const HeroSection = () => {
 
       {/* Metin Alanı */}
       <div className="w-full lg:w-1/2 mt-10 lg:mt-0 text-center lg:text-left">
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6">
+        <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight">
           Selam, ben <span className="text-teal-400">Kerim Tetik</span>
         </h1>
         <p className="text-xl text-gray-300 font-light mb-6">
           Yazılım geliştirmeyi seven ve kendini bu alanda sürekli geliştirmeye çalışan biriyim.
         </p>
         <p className="text-gray-400 leading-relaxed max-w-xl mx-auto lg:mx-0 text-base">
-          Geliştirdiğim sistemlerde verimlilik, güvenlik ve sürdürülebilirlik temel önceliklerimdir. Java ve Spring Boot gibi teknolojilerle arka uç servisler geliştiriyor, PostgreSQL gibi güçlü veritabanlarıyla veri yönetimini üstleniyorum. Kod yazarken yalnızca bugünü değil, geleceği de düşünüyorum.
+          Yazılım geliştirme sürecinde öğrenmeye açık bir şekilde ilerliyorum. Java ve Spring Boot ile arka uç servisler üzerinde çalışıyor, PostgreSQL ile temel veritabanı işlemlerini yönetiyorum. Amacım her geçen gün kendimi biraz daha geliştirmek.
         </p>
-
-       
       </div>
 
-      {/* Görsel Alanı */}
+      {/* Görsel Alanı (karesel yapı) */}
       <div className="w-full lg:w-1/2 flex justify-center mb-10 lg:mb-0">
-        <div className="w-[260px] sm:w-[320px] h-[320px] sm:h-[380px] rounded-full overflow-hidden shadow-2xl border-4 border-teal-600">
+        <div className="w-[300px] sm:w-[360px] h-[360px] sm:h-[400px] rounded-xl overflow-hidden shadow-2xl border-4 border-teal-600 hover:scale-105 transition duration-700 ease-in-out">
           <img
             src="/profil2.jpg"
             alt="Kerim Tetik Portre"
