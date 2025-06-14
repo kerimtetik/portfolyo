@@ -18,25 +18,7 @@ const HeroSection = () => {
           Geliştirdiğim sistemlerde verimlilik, güvenlik ve sürdürülebilirlik temel önceliklerimdir. Java ve Spring Boot gibi teknolojilerle arka uç servisler geliştiriyor, PostgreSQL gibi güçlü veritabanlarıyla veri yönetimini üstleniyorum. Kod yazarken yalnızca bugünü değil, geleceği de düşünüyorum.
         </p>
 
-        {/* Sosyal Medya */}
-        <div className="mt-10 flex justify-center lg:justify-start gap-8 text-3xl">
-          <a
-            href="https://github.com/kerimtetik"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-400"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/kerim-tetik-708168221/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-300"
-          >
-            <FaLinkedin />
-          </a>
-        </div>
+       
       </div>
 
       {/* Görsel Alanı */}

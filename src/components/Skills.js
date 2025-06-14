@@ -1,3 +1,4 @@
+// src/components/Skills.jsx
 import React from "react";
 import {
   FaJava,
@@ -37,27 +38,27 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-gradient-to-br from-purple-700 via-purple-800 to-black text-white py-20 px-4 sm:px-6">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+    <section className="bg-[#0f172a] text-white py-20 px-6 md:px-12 font-sans">
+      <div className="max-w-5xl mx-auto text-center">
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-12 tracking-tight">
           Kullandığım Teknolojiler
         </h2>
-        <div className="space-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-lg px-4 sm:px-6 py-4 shadow-md hover:shadow-lg transition duration-300 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
+              className="bg-[#1e293b] hover:bg-[#334155] transition-all duration-300 p-6 rounded-xl shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 text-left w-full sm:w-auto">
                 {skill.icon}
-                <span className="text-lg font-medium">{skill.name}</span>
+                <span className="text-lg font-semibold">{skill.name}</span>
               </div>
-              <div className="flex gap-1 justify-start sm:justify-end">
+              <div className="flex gap-1 justify-center sm:justify-end w-full sm:w-auto">
                 {[...Array(5)].map((_, i) => (
                   <div
                     key={i}
                     className={`w-5 h-5 rounded-sm ${
-                      i < skill.level ? "bg-pink-500" : "bg-gray-600"
+                      i < skill.level ? "bg-emerald-400" : "bg-gray-600"
                     }`}
                   ></div>
                 ))}

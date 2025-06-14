@@ -9,7 +9,8 @@ const ContactButton = () => {
   return (
     <button
       onClick={() => navigate('/contact')}
-      className="fixed bottom-6 right-6 bg-pink-600 hover:bg-pink-700 text-white p-4 rounded-full shadow-lg z-50 transition duration-300"
+      title="İletişime Geç"
+      className="fixed bottom-6 right-6 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-xl z-50 transition-all duration-300 hover:scale-110"
     >
       <FaEnvelope size={24} />
     </button>

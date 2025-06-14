@@ -1,3 +1,4 @@
+// src/components/Education.jsx
 import React from "react";
 
 const educationData = [
@@ -11,7 +12,7 @@ const educationData = [
     school: "İnönü Üniversitesi",
     degree: "Bilgisayar Mühendisliği (Lisans)",
     year: "2021 - 2025",
-    note: "3.03/4.00",
+    note: "3.03 / 4.00",
   },
 ];
 
@@ -22,26 +23,34 @@ const language = {
 
 const Education = () => {
   return (
-    <section className="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 px-4 sm:px-6">
+    <section className="bg-[#0f172a] text-white py-20 px-6 md:px-12 font-sans">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold mb-12">Eğitim</h2>
-        <div className="space-y-8">
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-12 tracking-tight">
+          Eğitim Bilgilerim
+        </h2>
+
+        <div className="grid gap-6 grid-cols-1 md:grid-cols-2">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-4 sm:p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left"
+              className="bg-[#1e293b] hover:bg-[#334155] transition-all duration-300 p-6 rounded-xl shadow-lg text-left"
             >
-              <h3 className="text-xl sm:text-2xl font-semibold text-pink-400">{edu.school}</h3>
-              <p className="text-md sm:text-lg">{edu.degree}</p>
-              <p className="text-sm text-gray-400 mt-1">{edu.year}</p>
-              <p className="text-sm text-gray-400">Not Ortalaması: {edu.note}</p>
+              <h3 className="text-xl sm:text-2xl font-semibold text-emerald-400 mb-2">
+                {edu.school}
+              </h3>
+              <p className="text-base font-medium mb-1">{edu.degree}</p>
+              <p className="text-sm text-gray-400 mb-1">{edu.year}</p>
+              <p className="text-sm text-gray-400">
+                Not Ortalaması: {edu.note}
+              </p>
             </div>
           ))}
 
-          {/* Dil seviyesi */}
-          <div className="bg-gray-900 p-4 sm:p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left">
-            <h3 className="text-xl sm:text-2xl font-semibold text-pink-400">Yabancı Dil</h3>
-            <p className="text-md sm:text-lg">{language.dil}</p>
+          <div className="bg-[#1e293b] hover:bg-[#334155] transition-all duration-300 p-6 rounded-xl shadow-lg text-left">
+            <h3 className="text-xl sm:text-2xl font-semibold text-emerald-400 mb-2">
+              Yabancı Dil
+            </h3>
+            <p className="text-base font-medium mb-1">{language.dil}</p>
             <p className="text-sm text-gray-400">Seviye: {language.seviye}</p>
           </div>
         </div>

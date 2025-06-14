@@ -18,12 +18,12 @@ const HeroLanding = () => {
         </p>
       </div>
 
-      {/* Profil Görseli */}
+      {/* Profil Görseli (Dikdörtgen) */}
       <div className="w-full lg:w-1/2 flex justify-center">
         <img
           src="/profil.jpg"
           alt="Kerim Tetik Portre"
-          className="rounded-full border-4 border-teal-500 shadow-xl w-[260px] sm:w-[320px] h-[260px] sm:h-[320px] object-cover hover:rotate-1 transition duration-700 ease-in-out"
+          className="rounded-lg border-4 border-teal-500 shadow-xl w-[300px] sm:w-[380px] h-[280px] sm:h-[300px] object-cover hover:scale-105 transition duration-700 ease-in-out"
         />
       </div>
     </section>

@@ -4,40 +4,42 @@ import { FaGithub, FaLinkedin, FaMapMarkerAlt, FaEnvelope } from "react-icons/fa
 
 const Contact = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 px-6">
+    <section className="min-h-screen bg-[#0f172a] text-white py-20 px-6 font-sans">
       <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-10">İletişim Bilgileri</h2>
+        <h2 className="text-4xl sm:text-5xl font-extrabold mb-12 tracking-tight">
+          İletişim Bilgileri
+        </h2>
 
-        <div className="space-y-6 text-left">
-          <div className="flex items-center gap-4">
-            <FaMapMarkerAlt className="text-pink-500 text-xl" />
-            <p>Malatya, Türkiye</p>
+        <div className="space-y-6 text-left bg-[#1e293b] rounded-xl p-8 shadow-lg">
+          <div className="flex items-center gap-4 hover:translate-x-2 transition duration-300">
+            <FaMapMarkerAlt className="text-emerald-400 text-xl" />
+            <p className="text-lg">Malatya, Türkiye</p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <FaEnvelope className="text-pink-500 text-xl" />
-            <p>abdulkerimtetik0@gmail.com</p>
+          <div className="flex items-center gap-4 hover:translate-x-2 transition duration-300">
+            <FaEnvelope className="text-emerald-400 text-xl" />
+            <p className="text-lg">abdulkerimtetik0@gmail.com</p>
           </div>
 
-          <div className="flex items-center gap-4">
-            <FaGithub className="text-pink-500 text-xl" />
+          <div className="flex items-center gap-4 hover:translate-x-2 transition duration-300">
+            <FaGithub className="text-emerald-400 text-xl" />
             <a
               href="https://github.com/kerimtetik"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="text-lg hover:underline"
             >
               github.com/kerimtetik
             </a>
           </div>
 
-          <div className="flex items-center gap-4">
-            <FaLinkedin className="text-pink-500 text-xl" />
+          <div className="flex items-center gap-4 hover:translate-x-2 transition duration-300">
+            <FaLinkedin className="text-emerald-400 text-xl" />
             <a
               href="https://www.linkedin.com/in/kerim-tetik-708168221/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:underline"
+              className="text-lg hover:underline"
             >
               linkedin.com/in/kerim-tetik-708168221/
             </a>
@@ -47,7 +49,7 @@ const Contact = () => {
         {/* Geri Dön Butonu */}
         <div className="mt-12">
           <Link to="/">
-            <button className="bg-white text-purple-800 px-6 py-2 rounded-full hover:bg-gray-200 transition font-medium shadow">
+            <button className="bg-emerald-500 text-white px-6 py-3 rounded-full hover:bg-emerald-600 transition font-medium shadow-lg">
               Ana Sayfaya Dön
             </button>
           </Link>
