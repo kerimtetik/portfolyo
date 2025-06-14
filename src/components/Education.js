@@ -22,26 +22,26 @@ const language = {
 
 const Education = () => {
   return (
-    <section className="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 px-6">
+    <section className="bg-gradient-to-br from-purple-800 via-purple-900 to-black text-white py-20 px-4 sm:px-6">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-12">Eğitim</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-12">Eğitim</h2>
         <div className="space-y-8">
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left"
+              className="bg-gray-900 p-4 sm:p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left"
             >
-              <h3 className="text-2xl font-semibold text-pink-400">{edu.school}</h3>
-              <p className="text-lg">{edu.degree}</p>
+              <h3 className="text-xl sm:text-2xl font-semibold text-pink-400">{edu.school}</h3>
+              <p className="text-md sm:text-lg">{edu.degree}</p>
               <p className="text-sm text-gray-400 mt-1">{edu.year}</p>
               <p className="text-sm text-gray-400">Not Ortalaması: {edu.note}</p>
             </div>
           ))}
 
           {/* Dil seviyesi */}
-          <div className="bg-gray-900 p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left">
-            <h3 className="text-2xl font-semibold text-pink-400">Yabancı Dil</h3>
-            <p className="text-lg">{language.dil}</p>
+          <div className="bg-gray-900 p-4 sm:p-6 rounded-lg shadow hover:shadow-xl transition duration-300 text-left">
+            <h3 className="text-xl sm:text-2xl font-semibold text-pink-400">Yabancı Dil</h3>
+            <p className="text-md sm:text-lg">{language.dil}</p>
             <p className="text-sm text-gray-400">Seviye: {language.seviye}</p>
           </div>
         </div>

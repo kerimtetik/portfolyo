@@ -1,4 +1,3 @@
-// src/components/Skills.js
 import React from "react";
 import {
   FaJava,
@@ -38,20 +37,22 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="bg-gradient-to-br from-purple-700 via-purple-800 to-black text-white py-20 px-6">
+    <section className="bg-gradient-to-br from-purple-700 via-purple-800 to-black text-white py-20 px-4 sm:px-6">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Kullandığım Teknolojiler</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+          Kullandığım Teknolojiler
+        </h2>
         <div className="space-y-6">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="bg-gray-900 rounded-lg px-6 py-4 shadow-md hover:shadow-lg transition duration-300 flex items-center justify-between"
+              className="bg-gray-900 rounded-lg px-4 sm:px-6 py-4 shadow-md hover:shadow-lg transition duration-300 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4"
             >
               <div className="flex items-center gap-4">
                 {skill.icon}
                 <span className="text-lg font-medium">{skill.name}</span>
               </div>
-              <div className="flex gap-1">
+              <div className="flex gap-1 justify-start sm:justify-end">
                 {[...Array(5)].map((_, i) => (
                   <div
                     key={i}
