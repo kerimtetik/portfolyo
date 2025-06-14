@@ -21,19 +21,22 @@ const HeroSection = () => {
 
         {/* Butonlar */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <a
-            href="#projects"
-            className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full transition font-medium shadow text-center"
-          >
-            Projelerim
-          </a>
-          <a
-            href="#contact"
-            className="bg-white text-purple-700 px-6 py-2 rounded-full hover:bg-gray-200 transition font-medium shadow text-center"
-          >
-            İletişim
-          </a>
-        </div>
+              <a
+                href="https://github.com/kerimtetik?tab=repositories" // GitHub repo linkini buraya yaz
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full transition font-medium shadow text-center"
+              >
+                Projelerim
+              </a>
+
+              <a
+                href="/contact" // Contact sayfası için yönlendirme
+                className="bg-white text-purple-700 px-6 py-2 rounded-full hover:bg-gray-200 transition font-medium shadow text-center"
+              >
+                İletişim
+              </a>
+</div>
 
         {/* Sosyal Medya */}
         <div className="mt-6 flex justify-center lg:justify-start gap-6 text-2xl text-white">
