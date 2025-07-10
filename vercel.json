@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "kerimtetik.com"
+        }
+      ],
+      "destination": "https://www.kerimtetik.com/:1",
+      "permanent": true
+    }
+  ]
+}
