@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "services": "Hizmetler",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "contact": "İletişim"
+  },
+  "heroTitle": "Kerim Tetik",
+  "herocontext": "Full-Stack Gelistirici",
+   "heroDesc": "Modern ve yüksek performanslı web uygulamaları geliştiren full-stack yazılımcı.",
+  "hireMe": "Benimle Çalış",
+  "aboutTitle": "Hakkımda",
+  "servicesTitle": "Hizmetlerim",
+  "skillsTitle": "Yetenekler",
+  "projectsTitle": "Projeler",
+  "contactTitle": "İletişim",
+  "heroSkills": ["Front-End Geliştirme", "Back-End Geliştirme", "Veritabanı & API Entegrasyonu"],
+  "aboutText": "Yazılım geliştirme yolculuğum, teknolojiyi insanların hayatını kolaylaştıran yenilikçi çözümler üretmek için bir araç olarak görmemle başladı.\nİnönü Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.\nReact ve modern JavaScript teknolojileriyle front-end, Java Spring Boot ve Node.js altyapılarıyla back-end geliştirme yaparak full-stack uygulamalar geliştiriyorum.\nÖlçeklenebilir sistemler, kullanıcı deneyimi odaklı arayüzler ve yapay zekâ destekli çözümler üretme konularında çalışıyorum.\nHedefim; performans, güvenlik ve tasarımı birleştirerek kullanıcıya gerçek değer katan ürünler geliştirmek."
+}

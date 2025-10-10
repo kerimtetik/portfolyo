@@ -1,39 +1,37 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ContactButton from './components/ContactButton';
-import HeroLanding from './components/HeroLanding';
-import HeroSection from './components/HeroSection';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Services from "./components/Services";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import ContactBlock from "./components/ContactBlock";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <Router>
-      <div className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen transition-colors duration-300 relative">
-        
-        <ContactButton />
-
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <HeroLanding />
-                <HeroSection />
-                <Skills />                
-                <Education />
-              </>
-            }
-          />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        <Footer /> {/* ✅ Artık doğru yerde */}
-      </div>
-    </Router>
+<Router future={{ v7_relativeSplatPath: true }}>
+  <div className="bg-[#070b13] min-h-screen text-white scroll-smooth">
+    <Header />
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <Hero />
+            <About />
+            <Services />
+            <Skills />
+            <Projects />
+            <ContactBlock />
+            <Footer />
+          </>
+        }
+      />
+    </Routes>
+  </div>
+</Router>
   );
 }
+
 export default App;

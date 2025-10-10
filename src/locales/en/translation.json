@@ -1,0 +1,21 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "heroTitle": "Kerim Tetik",
+  "herocontext": "Full-Stack Developer",
+  "heroDesc": "Full-stack developer building modern and high-performance web applications.",
+  "hireMe": "Hire Me",
+  "aboutTitle": "About Me",
+  "servicesTitle": "Services",
+  "skillsTitle": "Skills",
+  "projectsTitle": "Projects",
+  "contactTitle": "Contact",
+  "heroSkills": ["Front-End Development", "Back-End Development", "Database & API Integration"],
+   "aboutText":"My journey in software development began with the desire to use technology as a tool to create innovative solutions that make people’s lives easier.I graduated from İnönü University with a degree in Computer Engineering.I develop full-stack applications using React and modern JavaScript technologies for the front-end, and Java Spring Boot and Node.js for the back-end.I focus on building scalable systems, user experience–driven interfaces, and AI-powered solutions.My goal is to create products that combine performance, security, and design to deliver real value to users."
+}
