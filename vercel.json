@@ -8,7 +8,7 @@
           "value": "kerimtetik.com"
         }
       ],
-      "destination": "https://www.kerimtetik.com/:1",
+      "destination": "https://www.kerimtetik.com/:path*",
       "permanent": true
     }
   ]
