@@ -58,6 +58,7 @@ export default function Header() {
           <NavLink href="#home" label={t("nav.home")} />
           <NavLink href="#about" label={t("nav.about")} />
           <NavLink href="#services" label={t("nav.services")} />
+          <NavLink href="#experience" label={t("nav.experience")} />
           <NavLink href="#skills" label={t("nav.skills")} />
           <NavLink href="#projects" label={t("nav.projects")} />
           <NavLink href="#contact" label={t("nav.contact")} />

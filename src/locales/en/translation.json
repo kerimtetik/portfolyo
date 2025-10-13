@@ -4,6 +4,7 @@
     "about": "About",
     "services": "Services",
     "skills": "Skills",
+    "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -16,6 +17,8 @@
   "skillsTitle": "Skills",
   "projectsTitle": "Projects",
   "contactTitle": "Contact",
+   "experienceTitle": "Experience",
+  "experienceIntro": "Selected highlights from projects where I owned end-to-end delivery.",
   "heroSkills": ["Front-End Development", "Back-End Development", "Database & API Integration"],
    "aboutText":"My journey in software development began with the desire to use technology as a tool to create innovative solutions that make people’s lives easier.I graduated from İnönü University with a degree in Computer Engineering.I develop full-stack applications using React and modern JavaScript technologies for the front-end, and Java Spring Boot and Node.js for the back-end.I focus on building scalable systems, user experience–driven interfaces, and AI-powered solutions.My goal is to create products that combine performance, security, and design to deliver real value to users."
 }
