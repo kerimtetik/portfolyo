@@ -29,14 +29,16 @@ Kişisel portfolyo sitesi. React, Tailwind CSS, Framer Motion gibi teknolojileri
    git clone https://github.com/kerimtetik/portfolyo.git
    cd portfolyo
    ```
-2. Bağımlılıkları yükle:
-   ```bash
+2. Bağımlılıkları Yükle:
+  ```bash
   npm install
+   ```
+  
   
 3.Geliştirme sunucusunu başlat:
   ```bash
   npm start
-```
+   ```
 
 ###📐 Özellikler
 
