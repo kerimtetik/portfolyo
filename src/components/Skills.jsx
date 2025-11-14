@@ -16,12 +16,15 @@ import {
   SiTailwindcss,
   SiFirebase,
   SiGit,
+  SiPostman,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 export default function Skills() {
+  const { t } = useTranslation();
   const skillGroups = [
     {
-      title: "Languages",
+      title: t("Languages"),
       items: [
         { name: "Java", icon: <FaJava size={26} color="#f89820" />, level: 4 },
         { name: "C#", icon: <SiDotnet size={26} color="#512BD4" />, level: 3 },
@@ -40,7 +43,7 @@ export default function Skills() {
       ],
     },
     {
-      title: "Frameworks & Libraries",
+      title: t("Frameworks & Libraries"),
       items: [
         { name: "React", icon: <FaReact size={26} color="#61DAFB" />, level: 4 },
         { name: "Next.js", icon: <SiNextdotjs size={26} color="#000000" />, level: 3 },
@@ -49,10 +52,11 @@ export default function Skills() {
       ],
     },
     {
-      title: "Tools & Databases",
+      title: t("Tools & Databases"),
       items: [
         { name: "Docker", icon: <FaDocker size={26} color="#0db7ed" />, level: 3 },
         { name: "Git / GitHub", icon: <SiGit size={26} color="#F1502F" />, level: 4 },
+        { name: "Postman", icon: <SiPostman size={26} color="#FF6C37" />, level: 4 },
         { name: "PostgreSQL", icon: <SiPostgresql size={26} color="#336791" />, level: 4 },
         { name: "Firebase", icon: <SiFirebase size={26} color="#FFCA28" />, level: 2 },
       ],
@@ -79,7 +83,7 @@ export default function Skills() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Skills & Proficiency
+        {t("Skills & Proficiency")}
         </motion.h2>
 
         <div className="space-y-20">
