@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Projects() {
+  const { t } = useTranslation();
   const projects = [
     {
       name: "Gözlük E-Ticaret Uygulaması",
@@ -11,6 +13,13 @@ export default function Projects() {
       tech: ["Spring Boot", "Java 17", "PostgreSQL"],
       github: "https://github.com/kerimtetik/eticaret",
       live: "#",
+    },
+    {
+      name: "Sayılarla İnönü",
+      image: "./site2.png",
+      desc: "Üniversitenin kurumsal verilerini anlaşılır ve tutarlı biçimde sunan bu projenin geliştirme sürecine katkı sağladım; arayüz tutarlılığı ve performans odaklı iyileştirmelerde aktif rol aldım.",
+      tech: ["JavaScript", "React", "SCSS"],
+      live: "https://sayilarla.inonu.edu.tr/",
     },
   ];
 
@@ -34,7 +43,7 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          Featured Projects
+          {t("projectsTitle") || "Featured Projects"}
         </motion.h2>
 
         <motion.div
@@ -103,7 +112,7 @@ export default function Projects() {
                       className="flex items-center gap-2 text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
                     >
                       <FaExternalLinkAlt size={14} />{" "}
-                      <span className="text-sm font-medium">Live Demo</span>
+                      <span className="text-sm font-medium">Siteyi Gör</span>
                     </a>
                   )}
                 </div>

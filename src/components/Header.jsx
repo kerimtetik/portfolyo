@@ -36,9 +36,10 @@ export default function Header() {
 
   const changeLang = (lang) => i18n.changeLanguage(lang);
 
-  const NavLink = ({ href, label }) => (
+  const NavLink = ({ href, label, onClick }) => (
     <a
       href={href}
+      onClick={onClick}
       className="px-3 py-2 text-sm font-medium text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
     >
       {label}
@@ -104,6 +105,56 @@ export default function Header() {
         >
           {open ? <X /> : <Menu />}
         </button>
+      </div>
+
+      <div
+        className={`md:hidden border-t border-gray-300 dark:border-white/10 bg-white/90 dark:bg-[#0a0612]/90 backdrop-blur-lg overflow-hidden transition-all duration-200 origin-top ${
+          open
+            ? "max-h-[520px] opacity-100 translate-y-0"
+            : "max-h-0 opacity-0 -translate-y-2 pointer-events-none"
+        }`}
+      >
+        <nav className="px-4 py-3 flex flex-col gap-2">
+          <NavLink href="#home" label={t("nav.home")} onClick={() => setOpen(false)} />
+          <NavLink href="#about" label={t("nav.about")} onClick={() => setOpen(false)} />
+          <NavLink href="#services" label={t("nav.services")} onClick={() => setOpen(false)} />
+          <NavLink href="#experience" label={t("nav.experience")} onClick={() => setOpen(false)} />
+          <NavLink href="#skills" label={t("nav.skills")} onClick={() => setOpen(false)} />
+          <NavLink href="#projects" label={t("nav.projects")} onClick={() => setOpen(false)} />
+          <NavLink href="#contact" label={t("nav.contact")} onClick={() => setOpen(false)} />
+        </nav>
+
+        <div className="px-4 pb-4 flex items-center gap-2">
+          <button
+            onClick={() => changeLang("tr")}
+            className={`px-3 py-1 rounded-md text-sm font-medium transition ${
+              i18n.language === "tr"
+                ? "bg-violet-500 text-white shadow-[0_0_8px_rgba(139,92,246,.6)]"
+                : "text-gray-800 dark:text-white/70 hover:text-violet-500"
+            }`}
+          >
+            即蠹即蠶 TR
+          </button>
+
+          <button
+            onClick={() => changeLang("en")}
+            className={`px-3 py-1 rounded-md text-sm font-medium transition ${
+              i18n.language === "en"
+                ? "bg-violet-500 text-white shadow-[0_0_8px_rgba(139,92,246,.6)]"
+                : "text-gray-800 dark:text-white/70 hover:text-violet-500"
+            }`}
+          >
+            即讀即癱 EN
+          </button>
+
+          <button
+            onClick={toggleTheme}
+            className="ml-auto p-2 rounded-md border border-transparent hover:border-violet-400 text-gray-800 dark:text-white transition"
+            aria-label="Toggle theme"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
+        </div>
       </div>
     </header>
   );
