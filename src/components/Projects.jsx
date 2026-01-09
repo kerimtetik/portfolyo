@@ -5,14 +5,12 @@ import { useTranslation } from "react-i18next";
 export default function Projects() {
   const { t } = useTranslation();
   const projects = [
-    {
-      name: "Gözlük E-Ticaret Uygulaması",
-      image: "./site1.png",
-      desc: `E-posta doğrulamalı ve JWT tabanlı güvenlik sistemine sahip tam fonksiyonel bir e-ticaret platformu.
-      Ürün kataloğu, sepet, sipariş yönetimi ve yönetici paneli içerir. Katmanlı mimariyle inşa edilmiş ve Docker desteği sayesinde kolayca dağıtılabilir yapıdadır.`,
-      tech: ["Spring Boot", "Java 17", "PostgreSQL"],
-      github: "https://github.com/kerimtetik/eticaret",
-      live: "#",
+     {
+      name: "İnüfest",
+      image: "./site3.png",
+      desc: "İnönü Üniversitesi'nin düzenlediği bilim ve teknoloji yarışması için geliştirdiğimiz resmi web sitesidir. ",
+      tech: ["Spring Boot","Java 17","JavaScript", "React", "Tailwind CSS"],
+      live: "https://inufest.inonu.edu.tr/",
     },
     {
       name: "Sayılarla İnönü",
@@ -21,7 +19,17 @@ export default function Projects() {
       tech: ["JavaScript", "React", "SCSS"],
       live: "https://sayilarla.inonu.edu.tr/",
     },
+    {
+      name: "Gözlük E-Ticaret Uygulaması",
+      image: "./site1.png",
+      desc: `E-posta doğrulamalı ve JWT tabanlı güvenlik sistemine sahip tam fonksiyonel bir e-ticaret platformu.
+      Ürün kataloğu, sepet, sipariş yönetimi ve yönetici paneli içerir. Katmanlı mimariyle inşa edilmiş ve Docker desteği sayesinde kolayca dağıtılabilir yapıdadır.`,
+      tech: ["Spring Boot", "Java 17", "PostgreSQL"],
+      github: "https://github.com/kerimtetik/eticaret",
+      live: "#",
+    }
   ];
+  const projectsLoop = projects;
 
   return (
     <section
@@ -35,7 +43,7 @@ export default function Projects() {
       />
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.04]" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-4 py-24 text-center">
+      <div className="relative z-10 w-full px-4 md:px-8 lg:px-12 py-24 text-center">
         <motion.h2
           className="text-5xl font-['Orbitron'] text-gray-900 dark:text-white mb-16 drop-shadow-[0_0_15px_rgba(168,85,247,.45)]"
           initial={{ opacity: 0, y: 40 }}
@@ -47,76 +55,95 @@ export default function Projects() {
         </motion.h2>
 
         <motion.div
-          className="grid md:grid-cols-2 gap-10"
+          className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          {projects.map((p, i) => (
+          {projectsLoop.map((p, i) => (
             <motion.div
               key={i}
               className="group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-gray-800 bg-white/70 dark:bg-gray-900/60 backdrop-blur-md shadow-sm hover:shadow-[0_0_35px_rgba(168,85,247,0.25)] hover:border-violet-400/40 transition"
               whileHover={{ scale: 1.02 }}
             >
-              {/* Proje görseli */}
-              <div className="relative">
-                <img
-                  src={p.image}
-                  alt={p.name}
-                  className="w-full h-100 object-cover opacity-90 group-hover:opacity-100 transition"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
-              </div>
-
-              {/* Bilgi alanı */}
-              <div className="relative p-6 text-left">
-                {/* Neon accent bar */}
-                <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-violet-400 via-pink-400 to-transparent rounded-l-lg" />
-
-                <h3 className="font-['Orbitron'] text-2xl text-gray-900 dark:text-white mb-3 group-hover:text-violet-400 transition">
-                  {p.name}
-                </h3>
-                <p className="text-gray-700 dark:text-white/80 text-sm mb-5 leading-relaxed">
-                  {p.desc}
-                </p>
-
-                {/* Teknoloji etiketleri */}
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {p.tech.map((t, idx) => (
-                    <span
-                      key={idx}
-                      className="text-xs font-medium bg-violet-100/70 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 px-2 py-1 rounded-md border border-transparent hover:border-violet-400/40 transition"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                {/* Link butonları */}
-                <div className="flex items-center gap-5">
+                {/* Proje görseli */}
+                {p.live && p.live !== "#" ? (
                   <a
-                    href={p.github}
+                    href={p.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
+                    className="block relative aspect-video overflow-hidden"
+                    aria-label={`${p.name} - Site`}
                   >
-                    <FaGithub /> <span className="text-sm font-medium">GitHub</span>
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
                   </a>
+                ) : (
+                  <div className="relative aspect-video overflow-hidden">
+                    <img
+                      src={p.image}
+                      alt={p.name}
+                      className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition" />
+                  </div>
+                )}
 
-                  {p.live !== "#" && (
-                    <a
-                      href={p.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
-                    >
-                      <FaExternalLinkAlt size={14} />{" "}
-                      <span className="text-sm font-medium">Siteyi Gör</span>
-                    </a>
-                  )}
+                {/* Bilgi alanı */}
+                <div className="relative p-6 text-left">
+                  {/* Neon accent bar */}
+                  <div className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-violet-400 via-pink-400 to-transparent rounded-l-lg" />
+
+                  <h3 className="font-['Orbitron'] text-2xl text-gray-900 dark:text-white mb-3 group-hover:text-violet-400 transition">
+                    {p.name}
+                  </h3>
+                  <p className="text-gray-700 dark:text-white/80 text-sm mb-5 leading-relaxed">
+                    {p.desc}
+                  </p>
+
+                  {/* Teknoloji etiketleri */}
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {p.tech.map((t, idx) => (
+                      <span
+                        key={idx}
+                        className="text-xs font-medium bg-violet-100/70 dark:bg-violet-500/10 text-violet-700 dark:text-violet-300 px-2 py-1 rounded-md border border-transparent hover:border-violet-400/40 transition"
+                      >
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Link butonları */}
+                  <div className="flex items-center gap-5">
+                    {p.github && p.github !== "#" && (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
+                      >
+                        <FaGithub /> <span className="text-sm font-medium">GitHub</span>
+                      </a>
+                    )}
+
+                    {p.live !== "#" && (
+                      <a
+                        href={p.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-gray-800 dark:text-white/80 hover:text-violet-500 dark:hover:text-violet-400 transition"
+                      >
+                        <FaExternalLinkAlt size={14} />{" "}
+                        <span className="text-sm font-medium">Siteyi Gör</span>
+                      </a>
+                    )}
+                  </div>
                 </div>
-              </div>
             </motion.div>
           ))}
         </motion.div>

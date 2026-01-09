@@ -9,11 +9,7 @@ export default function Header() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
-    if (
-      localStorage.theme === "light" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: light)").matches)
-    ) {
+    if (localStorage.theme === "light") {
       setTheme("light");
       document.documentElement.classList.remove("dark");
     } else {
