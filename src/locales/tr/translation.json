@@ -16,10 +16,47 @@
   "servicesTitle": "Hizmetlerim",
   "skillsTitle": "Yetenekler",
   "projectsTitle": "Projeler",
-  "experienceTitle": "Deneyimler",
-  "featuredProjects": "Öne Çıkan Projeler",
+   "experienceTitle": "Deneyimler",
   "experienceIntro": "Gerçek ürünlerde uçtan uca sorumluluk aldığım projelerden seçili başlıklar.",
   "contactTitle": "İletişim",
+  "Skills & Proficiency": "Beceriler & Yeterlilik",
+  "Frameworks & Libraries": "Çerçeveler & Kütüphaneler",
+  "Tools & Databases": "Araçlar & Veritabanları",
+  "Languages": "Diller",
+  "Featured Projects": "Öne Çıkan Projeler",
   "heroSkills": ["Front-End Geliştirme", "Back-End Geliştirme", "Veritabanı & API Entegrasyonu"],
-  "aboutText": "Yazılım geliştirme yolculuğum, teknolojiyi insanların hayatını kolaylaştıran yenilikçi çözümler üretmek için bir araç olarak görmemle başladı.\nİnönü Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum.\nReact ve modern JavaScript teknolojileriyle front-end, Java Spring Boot ve Node.js altyapılarıyla back-end geliştirme yaparak full-stack uygulamalar geliştiriyorum.\nÖlçeklenebilir sistemler, kullanıcı deneyimi odaklı arayüzler ve yapay zekâ destekli çözümler üretme konularında çalışıyorum.\nHedefim; performans, güvenlik ve tasarımı birleştirerek kullanıcıya gerçek değer katan ürünler geliştirmek."
+  "aboutText": "Java Spring Boot ve React ile uçtan uca web uygulamaları geliştiren, RESTful API, JWT tabanlı kimlik doğrulama ve PostgreSQL üzerinde çalışan sistemlerde deneyimli bir Full Stack Developer’ım. Üniversite çapında aktif kullanılan projelerde görev aldım; ölçeklenebilir, temiz mimari ve sürdürülebilir kod prensiplerine odaklanırım.",
+  "experiences": [
+    {
+      "title": "Full Stack Geliştirici (Stajyer)",
+      "company": "İnönü Üniversitesi Dijital Dönüşüm Ofisi",
+      "period": "Eylül 2025-Ocak 2026",
+      "details": [
+        "Spring Boot ile RESTful API geliştirme süreçlerinde aktif rol aldım.",
+        "JWT tabanlı kimlik doğrulama ve yetkilendirme süreçlerinde görev aldım.",
+        "Katmanlı mimari (Controller, Service, Repository) ile sürdürülebilir backend yapıları oluşturdum."
+      ]
+    },
+    {
+      "title": "Backend Geliştici (Stajyer)",
+      "company": "KawienAI",
+      "period": "Temmuz 2025 – Eylül 2025",
+      "details": [
+        "Doğal Dil İşleme (NLP) tabanlı AI bot geliştirme süreçlerinde görev aldım",
+        "Python ve ilgili kütüphaneler (TensorFlow, NLTK, Hugging Face) kullanarak metin işleme pipeline’ları geliştirdim",
+        "Backend entegrasyonları için REST API uç noktaları tasarladım ve test ettim",
+        "AI modellerini backend mimarisiyle entegre ederek, ölçeklenebilir ve güvenilir API yapısı kurmaya katkı sağladım"
+      ]
+    },
+    {
+      "title": "Stajyer",
+      "company": "Google Oyun ve Uygulama Akademisi",
+      "period": "Kasım 2023 – Temmuz 2024",
+      "details": [
+        "Google’un oyun ve uygulama geliştirme süreçleri üzerine eğitim ve staj programına katıldım.",
+        "Yazılım geliştirme süreçlerini öğrenme ve uygulama fırsatı buldum.",
+        "Google teknolojik altyapısını kullanarak projelerde yer aldım."
+      ]
+    }
+  ]
 }

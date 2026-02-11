@@ -12,9 +12,7 @@ import {
   SiPostgresql,
   SiJavascript,
   SiDotnet,
-  SiNextdotjs,
   SiTailwindcss,
-  SiFirebase,
   SiGit,
   SiPostman,
 } from "react-icons/si";
@@ -46,7 +44,6 @@ export default function Skills() {
       title: t("Frameworks & Libraries"),
       items: [
         { name: "React", icon: <FaReact size={26} color="#61DAFB" />, level: 4 },
-        { name: "Next.js", icon: <SiNextdotjs size={26} color="#000000" />, level: 3 },
         { name: "Spring Boot", icon: <SiSpringboot size={26} color="#6DB33F" />, level: 4 },
         { name: "Tailwind CSS", icon: <SiTailwindcss size={26} color="#38BDF8" />, level: 3 },
       ],
@@ -58,7 +55,6 @@ export default function Skills() {
         { name: "Git / GitHub", icon: <SiGit size={26} color="#F1502F" />, level: 4 },
         { name: "Postman", icon: <SiPostman size={26} color="#FF6C37" />, level: 4 },
         { name: "PostgreSQL", icon: <SiPostgresql size={26} color="#336791" />, level: 4 },
-        { name: "Firebase", icon: <SiFirebase size={26} color="#FFCA28" />, level: 2 },
       ],
     },
   ];

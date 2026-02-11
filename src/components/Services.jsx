@@ -14,12 +14,12 @@ export default function Services() {
     {
       icon: <Code2 size={34} className="text-violet-400 dark:text-violet-400" />,
       title: "Frontend Development",
-      desc: "React, Next.js ve Tailwind kullanarak performanslı web uygulamaları geliştiriyorum.",
+      desc: "React ve Tailwind Css kullanarak performanslı web uygulamaları geliştiriyorum.",
     },
     {
       icon: <Server size={34} className="text-violet-400 dark:text-violet-400" />,
       title: "Backend Development",
-      desc: "Node.js, Prisma ve PostgreSQL tabanlı ölçeklenebilir backend mimarileri kuruyorum.",
+      desc: "Java ve PostgreSQL tabanlı ölçeklenebilir backend mimarileri kuruyorum.",
     },
   ];
 

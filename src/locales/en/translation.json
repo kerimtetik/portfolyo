@@ -10,16 +10,53 @@
   },
   "heroTitle": "Kerim Tetik",
   "herocontext": "Full-Stack Developer",
-  "heroDesc": "Full-stack developer building modern and high-performance web applications.",
+  "heroDesc": "Full-stack developer developing modern and high-performance web applications.",
   "hireMe": "Hire Me",
   "aboutTitle": "About Me",
-  "servicesTitle": "Services",
+  "servicesTitle": "My Services",
   "skillsTitle": "Skills",
   "projectsTitle": "Projects",
-  "contactTitle": "Contact",
   "experienceTitle": "Experience",
-  "featuredProjects": "Featured Projects",
-  "experienceIntro": "Selected highlights from projects where I owned end-to-end delivery.",
+  "experienceIntro": "Selected titles from projects where I took end-to-end responsibility in real products.",
+  "contactTitle": "Contact",
+  "Skills & Proficiency": "Skills & Proficiency",
+  "Frameworks & Libraries": "Frameworks & Libraries",
+  "Tools & Databases": "Tools & Databases",
+  "Languages": "Languages",
+  "Featured Projects": "Featured Projects",
   "heroSkills": ["Front-End Development", "Back-End Development", "Database & API Integration"],
-   "aboutText":"My journey in software development began with the desire to use technology as a tool to create innovative solutions that make people’s lives easier.I graduated from İnönü University with a degree in Computer Engineering.I develop full-stack applications using React and modern JavaScript technologies for the front-end, and Java Spring Boot and Node.js for the back-end.I focus on building scalable systems, user experience–driven interfaces, and AI-powered solutions.My goal is to create products that combine performance, security, and design to deliver real value to users."
+  "aboutText": "I am a Full Stack Developer experienced in developing end-to-end web applications with Java Spring Boot and React, working on systems based on RESTful API, JWT-based authentication, and PostgreSQL. I have taken part in projects actively used university-wide; I focus on scalability, clean architecture, and sustainable code principles.",
+  "experiences": [
+    {
+      "title": "Intern",
+      "company": "Inonu University Digital Transformation Office",
+      "period": "September 2025 – Present",
+      "details": [
+        "Taking an active role in RESTful API development processes using Java and Spring Boot.",
+        "Developing component-based and responsive pages with modern interface design using React.",
+        "Working on creating sustainable backend structures with layered architecture (Controller, Service, Repository)."
+      ]
+    },
+    {
+      "title": "Intern",
+      "company": "KawienAI",
+      "period": "July 2025 – September 2025",
+      "details": [
+        "Took part in AI bot development processes based on Natural Language Processing (NLP).",
+        "Developed text processing pipelines using Python and related libraries (TensorFlow, NLTK, Hugging Face).",
+        "Designed and tested REST API endpoints for backend integrations.",
+        "Contributed to building a scalable and reliable API structure by integrating AI models with backend architecture."
+      ]
+    },
+    {
+      "title": "Intern",
+      "company": "Google Game and Application Academy",
+      "period": "November 2023 – July 2024",
+      "details": [
+        "Participated in the training and internship program on Google's game and application development processes.",
+        "Had the opportunity to learn and apply software development processes.",
+        "Took part in projects using Google's technological infrastructure."
+      ]
+    }
+  ]
 }

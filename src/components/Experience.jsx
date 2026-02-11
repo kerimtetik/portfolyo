@@ -4,40 +4,7 @@ import { useTranslation } from "react-i18next";
 export default function Experience() {
   const { t } = useTranslation();
 
-  const experiences = [
-    {
-      title: "İntern",
-      company: "İnönü Üniversitesi Dijital Dönüşüm Ofisi",
-      period: "Eylül 2025 – Devam Ediyor",
-      details: [
-        "Java ve Spring Boot kullanarak RESTful API geliştirme süreçlerinde aktif rol alıyorum",
-        "React kullanarak modern arayüz tasarımına sahip, bileşen tabanlı ve responsive sayfalar geliştiriyorum",
-        "Katmanlı mimari (Controller, Service, Repository) ile sürdürülebilir backend yapıları oluşturmada görev alıyorum",
-      ],
-    },
-    {
-      title: "İntern",
-      company: "KawienAI",
-      period: "Temmuz 2025 – Eylül 2025",
-      details: [
-        "Doğal Dil İşleme (NLP) tabanlı AI bot geliştirme süreçlerinde görev aldım",
-        "Python ve ilgili kütüphaneler (TensorFlow, NLTK, Hugging Face) kullanarak metin işleme pipeline’ları geliştirdim",
-        "Backend entegrasyonları için REST API uç noktaları tasarladım ve test ettim",
-        "AI modellerini backend mimarisiyle entegre ederek, ölçeklenebilir ve güvenilir API yapısı kurmaya katkı sağladım",
-      ],
-    },
-    {
-      title: "İntern",
-      company: "Google Oyun ve Uygulama Akademisi",
-      period: "Kasım 2023 – Temmuz 2024",
-      details: [
-        "Google’un oyun ve uygulama geliştirme süreçleri üzerine eğitim ve staj programına katıldım.",
-        "Yazılım geliştirme süreçlerini öğrenme ve uygulama fırsatı buldum.",
-        "Google teknolojik altyapısını kullanarak projelerde yer aldım.",
-      ],
-    },
-   
-  ];
+  const experiences = t("experiences", { returnObjects: true }) || [];
 
   return (
     <section

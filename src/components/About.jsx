@@ -36,17 +36,21 @@ export default function About() {
 
         {/* SAĞ TARAF: KUTULAR */}
         <motion.div
-          className="md:col-span-6 grid sm:grid-cols-3 gap-6 mt-10 md:mt-0"
+          className="md:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10 md:mt-0"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
           viewport={{ once: true }}
         >
           {[
+           {
+              num: "3.15 / 4.00\n İnönü Üniversitesi",
+              text: `Bilgisayar Mühendisliği (Lisans)\n2021 – 2025`,
+            },
             { num: "77", text: "ALES" },
             {
-              num: "3.03 / 4.00",
-              text: `İnönü Üniversitesi\nBilgisayar Mühendisliği (Lisans)\n2021 – 2025`,
+              num: "Marmara Üniversitesi",
+              text:"Veri Analizi Okulu Yapay Zeka Eğitimi\n2025-(Devam Ediyor)"
             },
             { num: "B1", text: "İngilizce Seviyesi" },
           ].map((it, i) => (
