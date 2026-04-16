@@ -19,13 +19,13 @@
    "experienceTitle": "Deneyimler",
   "experienceIntro": "Gerçek ürünlerde uçtan uca sorumluluk aldığım projelerden seçili başlıklar.",
   "contactTitle": "İletişim",
-  "Skills & Proficiency": "Beceriler & Yeterlilik",
+  "Skills ": "Beceriler & Yeterlilik",
   "Frameworks & Libraries": "Çerçeveler & Kütüphaneler",
   "Tools & Databases": "Araçlar & Veritabanları",
   "Languages": "Diller",
   "Featured Projects": "Öne Çıkan Projeler",
   "heroSkills": ["Front-End Geliştirme", "Back-End Geliştirme", "Veritabanı & API Entegrasyonu"],
-  "aboutText": "Java Spring Boot ve React ile uçtan uca web uygulamaları geliştiren, RESTful API, JWT tabanlı kimlik doğrulama ve PostgreSQL üzerinde çalışan sistemlerde deneyimli bir Full Stack Developer’ım. Üniversite çapında aktif kullanılan projelerde görev aldım; ölçeklenebilir, temiz mimari ve sürdürülebilir kod prensiplerine odaklanırım.",
+  "aboutText": "Java (Spring Boot) ve C# (.NET) ekosistemlerinde API geliştirme ve React ile modern kullanıcı arayüzleri inşa etme konusunda tecrübeli bir Bilgisayar Mühendisiyim. RESTful API tasarımı, JWT tabanlı kimlik doğrulama, PostgreSQL veri modelleme ve rol bazlı yetkilendirme alanlarında uygulamalı proje deneyimine sahibim. Üniversite ölçeğinde canlı kullanılan sistemlerde görev alarak güvenli, sürdürülebilir ve modüler yazılım geliştirme süreçlerine odaklandım.",
   "experiences": [
     {
       "title": "Full Stack Geliştirici (Stajyer)",

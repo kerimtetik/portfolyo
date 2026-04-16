@@ -24,10 +24,10 @@ export default function Skills() {
     {
       title: t("Languages"),
       items: [
-        { name: "Java", icon: <FaJava size={26} color="#f89820" />, level: 4 },
-        { name: "C#", icon: <SiDotnet size={26} color="#512BD4" />, level: 3 },
-        { name: "Python", icon: <FaPython size={26} color="#3776AB" />, level: 4 },
-        { name: "JavaScript", icon: <SiJavascript size={26} color="#F7DF1E" />, level: 3 },
+        { name: "Java", icon: <FaJava size={26} color="#f89820" />},
+        { name: "C#", icon: <SiDotnet size={26} color="#512BD4" /> },
+        { name: "Python", icon: <FaPython size={26} color="#3776AB" /> },
+        { name: "JavaScript", icon: <SiJavascript size={26} color="#F7DF1E" /> },
         {
           name: "HTML & CSS",
           icon: (
@@ -43,18 +43,18 @@ export default function Skills() {
     {
       title: t("Frameworks & Libraries"),
       items: [
-        { name: "React", icon: <FaReact size={26} color="#61DAFB" />, level: 4 },
-        { name: "Spring Boot", icon: <SiSpringboot size={26} color="#6DB33F" />, level: 4 },
-        { name: "Tailwind CSS", icon: <SiTailwindcss size={26} color="#38BDF8" />, level: 3 },
+        { name: "React", icon: <FaReact size={26} color="#61DAFB" /> },
+        { name: "Spring Boot", icon: <SiSpringboot size={26} color="#6DB33F" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss size={26} color="#38BDF8" /> },
       ],
     },
     {
       title: t("Tools & Databases"),
       items: [
-        { name: "Docker", icon: <FaDocker size={26} color="#0db7ed" />, level: 3 },
-        { name: "Git / GitHub", icon: <SiGit size={26} color="#F1502F" />, level: 4 },
-        { name: "Postman", icon: <SiPostman size={26} color="#FF6C37" />, level: 4 },
-        { name: "PostgreSQL", icon: <SiPostgresql size={26} color="#336791" />, level: 4 },
+        { name: "Docker", icon: <FaDocker size={26} color="#0db7ed" />  },
+        { name: "Git / GitHub", icon: <SiGit size={26} color="#F1502F" />},
+        { name: "Postman", icon: <SiPostman size={26} color="#FF6C37" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql size={26} color="#336791" /> },
       ],
     },
   ];
@@ -109,18 +109,6 @@ export default function Skills() {
                       <span className="font-['Orbitron'] text-sm">{s.name}</span>
                     </div>
 
-                    <div className="flex gap-1">
-                      {[1, 2, 3, 4, 5].map((box, idx) => (
-                        <div
-                          key={idx}
-                          className={`w-3.5 h-3.5 rounded-sm transition ${
-                            idx < s.level
-                              ? "bg-violet-500 dark:bg-violet-400"
-                              : "bg-gray-300 dark:bg-white/10"
-                          }`}
-                        />
-                      ))}
-                    </div>
                   </div>
                 ))}
               </div>

@@ -25,7 +25,7 @@
   "Languages": "Languages",
   "Featured Projects": "Featured Projects",
   "heroSkills": ["Front-End Development", "Back-End Development", "Database & API Integration"],
-  "aboutText": "I am a Full Stack Developer experienced in developing end-to-end web applications with Java Spring Boot and React, working on systems based on RESTful API, JWT-based authentication, and PostgreSQL. I have taken part in projects actively used university-wide; I focus on scalability, clean architecture, and sustainable code principles.",
+  "aboutText": "I am a Computer Engineer with hands-on experience in API development within Java (Spring Boot) and C# (.NET) ecosystems, and building modern user interfaces with React. I have practical project experience in RESTful API design, JWT-based authentication, PostgreSQL data modeling, and role-based authorization. Having worked on live university-scale systems, I focus on developing secure, maintainable, and modular software.",
   "experiences": [
     {
       "title": "Intern",
